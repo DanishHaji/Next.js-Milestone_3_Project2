@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e293b;
+    color:#f8fafc;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+}
+
+
+
+.navbar a {
+    color: #f8fafc;
+    z-index: 20;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #38bdf8;
+}
+
+.navbar a:active {
+    color: #0ea5e9;
+}

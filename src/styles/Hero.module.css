@@ -1,0 +1,40 @@
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-images {
+  display: flex;
+  transition: transform 0.7s ease-in-out;
+}
+
+.hero-images > a {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    max-height: 600px;
+  }
+
+  .hero-container .left-arrow,
+  .hero-container .right-arrow {
+    display: none !important;
+  }
+
+  .hero-container .indicators {
+    display: none !important;
+  }
+}
